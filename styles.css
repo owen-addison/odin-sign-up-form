@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar&family=Raleway+Dots&display=swap');
 
-/* :root {
-
-} */
+:root {
+    font-family: 'Raleway Dots', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
 
 .content {
     display: flex;
@@ -21,14 +22,13 @@
     flex: 1 0 auto;
     width: 40%;
     height: 100vh;
+    min-width: 26rem;
 }
 
 .bg-image {
     position: absolute;
-    /* top: 0; */
     width: 100%;
     height: 100vh;
-    /* width: 100%; */
 }
 
 
@@ -43,7 +43,7 @@
     top: 20%;
 
     background: #000;
-    opacity: 0.7;
+    opacity: 0.4;
     width: 100%;
     height: 160px;
 }
@@ -54,9 +54,10 @@
 
 .logo-text {
     color: white;
-    font-family: 'Raleway Dots', 'Codystar', cursive;
-    font-size: 3rem;
-    width: auto;
+    font-family: 'Codystar', 'Raleway Dots', cursive;
+    font-size: 2.5rem;
+    width: 16rem;
+    text-align: left;
 }
 
 
@@ -73,9 +74,58 @@ p {
     text-align: center;
 }
 
+.footer a {
+    color: #000;
+}
+
 /* FORM SECTION */
 
 .form-side {
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+
+    padding: 1.5rem;
+    min-width: 39rem;
 }
 
+.form-intro p {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-top {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+    width: 80%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+}
+
+button {
+    flex: none;
+    width: 12em;
+    padding: 0.8em 1em 0.8em 1em;
+    
+}
