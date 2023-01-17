@@ -10,6 +10,7 @@
     flex-direction: row;
     width: 100vw;
     height: 100vh;
+
 }
 
 
@@ -23,6 +24,7 @@
     width: 40%;
     height: 100vh;
     min-width: 26rem;
+    min-height: 24rem;
 }
 
 .bg-image {
@@ -89,10 +91,13 @@ p {
 
     padding: 1.5rem;
     min-width: 39rem;
+    min-height: 24rem;
 }
 
 .form-intro p {
     text-align: left;
+
+    font-size: 1.2rem;
 }
 
 form {
