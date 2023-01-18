@@ -108,20 +108,31 @@ p {
     text-align: left;
 
     font-size: 1.2rem;
+
+    margin-bottom: 2rem;
 }
 
 form {
+
+    position: relative;
+    margin: 0 auto;
+    box-sizing: none;
+
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .form-top {
+    background-color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     width: auto;
     gap: 20px;
+
+    border: 0;
 }
+
 
 .form-row {
     display: flex;
