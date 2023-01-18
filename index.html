@@ -42,55 +42,59 @@
             <div class="form-container">
                 <form action="" method="post">
                     
-                                            <div class="form-top">
-                                                <fieldset>
+                    <div class="form-top">
+                        <fieldset>
+    
+                            <legend>Let's do this!</legend>
+    
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="first_name">First Name</label>
+                                    <input type="text" name="first_name" id="first_name" placeholder="John" required>
+                                </div>
+                                
+                                <div class="input-group">
+                                    <label for="last_name">Last Name</label>
+                                    <input type="text" name="last_name" id="last_name" placeholder="Doe" required>
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="johndoe@me.com" required>
+                                </div>
+    
+                                <div class="input-group">
+                                    <label for="phone_number">Phone Number (optional)</label>
+                                    <input type="number" name="phone_number" id="phone_number">
+                                </div>
+                            </div>
                             
-                                                    <legend>Let's do this!</legend>
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" required>
+                                </div>
+    
+                                <div class="input-group">
+                                    <label for="confirm_password">Confirm Password</label>
+                                    <input type="password" name="confirm_password" id="confirm_password" required>
+                                </div>
+                            </div>
                             
-                                                    <div class="form-row">
-                                                        <div class="input-group">
-                                                            <label for="first_name">First Name</label>
-                                                            <input type="text" name="first_name" id="first_name" placeholder="John" required>
-                                                        </div>
-                                                        
-                                                        <div class="input-group">
-                                                            <label for="last_name">Last Name</label>
-                                                            <input type="text" name="last_name" id="last_name" placeholder="Doe" required>
-                                                        </div>
-                                                    </div>
-                            
-                                                    <div class="form-row">
-                                                        <div class="input-group">
-                                                            <label for="email">Email</label>
-                                                            <input type="email" name="email" id="email" placeholder="johndoe@me.com" required>
-                                                        </div>
-                            
-                                                        <div class="input-group">
-                                                            <label for="phone_number">Phone Number (optional)</label>
-                                                            <input type="number" name="phone_number" id="phone_number">
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="form-row">
-                                                        <div class="input-group">
-                                                            <label for="password">Password</label>
-                                                            <input type="password" name="password" id="password" required>
-                                                        </div>
-                            
-                                                        <div class="input-group">
-                                                            <label for="confirm_password">Confirm Password</label>
-                                                            <input type="password" name="confirm_password" id="confirm_password" required>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                </fieldset>
-                                            </div>
-
-                    <button type="submit" id="submit-btn">Create Account</button>
-                    <div class="newsletter">
-                        <input type="checkbox" name="newsletter" id="newsletter" checked>
-                        <label for="newsletter">Keep me updated with the newsletter!</label>
+                        </fieldset>
                     </div>
+
+                    <div class="form-bottom">
+                        <button type="submit" id="submit-btn">Create Account</button>
+
+                        <div class="newsletter">
+                            <input type="checkbox" name="newsletter" id="newsletter" checked>
+                            <label for="newsletter">Keep me updated with the newsletter!</label>
+                        </div>
+                    </div>
+
                 </form>
             </div>
         </div>
