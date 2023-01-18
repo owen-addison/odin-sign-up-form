@@ -20,3 +20,17 @@ confirmPasswordInput.addEventListener("input", function() {
         errorMessage.textContent=" ";
     }
 });
+
+passwordInput.addEventListener("input", function() {
+    if (passwordInput.value !== confirmPasswordInput.value) {
+        passwordInput.classList.add("error");
+        confirmPasswordInput.classList.add("error");
+
+        errorMessage.textContent="Passwords don't match!";
+    } else {
+        passwordInput.classList.remove("error");
+        confirmPasswordInput.classList.remove("error");
+
+        errorMessage.textContent=" ";
+    }
+});
