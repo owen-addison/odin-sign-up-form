@@ -50,12 +50,12 @@
     flex: 1 0 auto;
     justify-content: center;
     align-items: center;
-    top: 7rem;
+    top: 17vh;
 
     background: #000;
     opacity: 0.4;
     width: 100%;
-    height: 160px;
+    height: 10rem;
 }
 
 .sula-logo {
@@ -162,8 +162,12 @@ fieldset {
     font-size: 0.8rem;
 }
 
+.form-bottom {
+    padding-left: var(--padding-sides);
+}
+
+
 #submit-btn {
-    flex: none;
     width: fit-content;
     font-size: 1rem;
     padding: 1em 2em;
@@ -184,4 +188,6 @@ fieldset {
 
 .newsletter {
     font-size: 0.7rem;
+    margin-top: 0.6rem;
+    padding-left: 0.125rem;
 }
