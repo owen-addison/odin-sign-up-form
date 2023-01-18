@@ -69,6 +69,8 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+
+    font-size: 0.6rem;
 }
 
 p {
@@ -126,11 +128,18 @@ form {
     display: flex;
     flex-direction: column;
     width: 12rem;
+
+    font-size: 0.8rem;
 }
 
-button {
+#submit-btn {
     flex: none;
-    width: 12em;
-    padding: 0.8em 1em 0.8em 1em;
+    width: 11em;
+    font-size: 0.9rem;
+    padding: 0.8em;
     
+}
+
+.newsletter {
+    font-size: 0.7rem;
 }
