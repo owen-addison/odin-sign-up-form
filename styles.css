@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Raleway+Dots&family=Source+Code+Pro:wght@300&display=swap');
 
 :root {
-    font-family: 'Raleway Dots', Helvetica, Arial, sans-serif;
+    font-family: 'Source Code Pro', monospace, Arial, sans-serif;
     font-size: 20px;
+    color: white;
+
+    --bg-color: #4D5E78;
+    --primary-color: #F39344;
+    --secondary-color: #B9C3D2;
 }
 
 .content {
@@ -91,12 +96,15 @@ p {
     align-items: left;
     gap: 20px;
 
+    background: var(--bg-color);
+
     padding: 1.5rem;
     min-width: 39rem;
     min-height: 24rem;
 }
 
 .form-intro p {
+    font-family: 'Codystar', 'Raleway Dots', cursive;
     text-align: left;
 
     font-size: 1.2rem;
@@ -134,10 +142,22 @@ form {
 
 #submit-btn {
     flex: none;
-    width: 11em;
-    font-size: 0.9rem;
-    padding: 0.8em;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 1em 2em;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
     
+    color: white;
+    border: solid 2px white;
+    background: var(--primary-color);
+}
+
+#submit-btn:hover {
+    color: var(--primary-color);
+    border: solid 2px var(--primary-color);
+    background: white;
 }
 
 .newsletter {
