@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Raleway+Dots&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Raleway+Dots&family=Source+Code+Pro:wght@300;400&display=swap');
 
 :root {
     font-family: 'Source Code Pro', monospace, Arial, sans-serif;
@@ -109,9 +109,9 @@ p {
     font-family: 'Codystar', 'Raleway Dots', cursive;
     text-align: left;
 
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* margin-bottom: 1rem; */
 
     padding-left: var(--padding-sides);
@@ -120,7 +120,6 @@ p {
 }
 
 form {
-
     position: relative;
     margin: 0 auto;
     box-sizing: none;
@@ -132,26 +131,37 @@ form {
 
 .form-top {
     background-color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
     width: auto;
-    gap: 20px;
+
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 fieldset {
     border: 0;
-
-    margin: 2rem;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--bg-color);
+    font-weight: 400;
+    font-size: 0.8rem;
+    
+    margin-top: calc(var(--padding-sides) * 0.5);
+    margin-bottom: calc(var(--padding-sides) * 0.5);
+    padding-left: var(--padding-sides);
+    padding-right: var(--padding-sides);
+    /* padding: 0; */
 }
 
 .form-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     
     width: 80%;
+}
+
+legend {
+    margin-bottom: 0.8em;
 }
 
 .input-group {
@@ -160,6 +170,12 @@ fieldset {
     width: 12rem;
 
     font-size: 0.8rem;
+}
+
+.input-group input {
+    font-weight: 300;
+    padding: 0.4em;
+    margin-top: 0.4em;
 }
 
 .form-bottom {
@@ -172,8 +188,10 @@ fieldset {
     font-size: 1rem;
     padding: 1em 2em;
     border-radius: 8px;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
     margin-bottom: 0.5rem;
+
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.2);
     
     color: white;
     border: solid 2px white;
@@ -184,10 +202,19 @@ fieldset {
     color: var(--primary-color);
     border: solid 2px var(--primary-color);
     background: white;
+
+    box-shadow: none;
 }
 
 .newsletter {
     font-size: 0.7rem;
     margin-top: 0.6rem;
     padding-left: 0.125rem;
+    font-weight: 300;
 }
+
+/* TO DO:
+        - Better spacing for form input elements
+        - Add validation styling for input boxes
+        - Try creating an empty flexbox div on left side to try keep consistent matching with right side of page
+*/
