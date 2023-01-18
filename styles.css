@@ -22,7 +22,7 @@
 }
 
 
-/* LEFT SIDE OF PAGE */
+/* /// LEFT SIDE OF PAGE \\\ */
 
 .logo-side {
     position: relative;
@@ -42,7 +42,7 @@
 }
 
 
-/* LOGO CARD SECTION */
+/* ---LOGO CARD SECTION--- */
 
 .logo-card {
     position: absolute;
@@ -90,7 +90,8 @@ p {
     color: #000;
 }
 
-/* FORM SECTION */
+
+/* /// RIGHT SIDE OF PAGE \\\ */
 
 .form-side {
     display: flex;
@@ -98,9 +99,9 @@ p {
     justify-content: center;
     align-items: left;
     gap: 20px;
-
+    
     background: var(--bg-color);
-
+    
     min-width: 39rem;
     min-height: 24rem;
 }
@@ -108,16 +109,18 @@ p {
 .form-intro p {
     font-family: 'Codystar', 'Raleway Dots', cursive;
     text-align: left;
-
+    
     font-size: 1.1rem;
-
+    
     margin-top: 1rem;
     /* margin-bottom: 1rem; */
-
+    
     padding-left: var(--padding-sides);
     padding-right: var(--padding-sides);
     
 }
+
+/* ---FORM SECTION--- */
 
 form {
     position: relative;
@@ -173,9 +176,37 @@ legend {
 }
 
 .input-group input {
+    border: 2px solid var(--bg-color);
+
     font-weight: 300;
     padding: 0.4em;
     margin-top: 0.4em;
+}
+
+input:valid {
+    border: 2px solid var(--bg-color);
+}
+
+input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+:focus {
+    outline: var(--primary-color);
+}
+
+input[type="password"][minlength]:invalid {
+    border: 2px dotted var(--primary-color);
+}
+
+
+input[type="password"]:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid var(--bg-color);
+}
+
+.error {
+    border: 2px solid red;
+    outline: 2px dotted red;
 }
 
 .form-bottom {
@@ -214,7 +245,5 @@ legend {
 }
 
 /* TO DO:
-        - Better spacing for form input elements
-        - Add validation styling for input boxes
-        - Try creating an empty flexbox div on left side to try keep consistent matching with right side of page
+    
 */
